@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+nav{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 24px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .dark-mode{
+      background: rgb(39, 39, 39);
+      color: rgb(228, 228, 228);
+  }
+
+  /* social media cards */
+  .row{
+      width: 100%;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .col{
+      padding: 10px;
+  }
+  .col>.card{
+      width: 100%;
+      border-top: 4px solid #2196F3;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.26);
+      padding: 20px 35px;
+
+
+  }
+  .social-profile{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .social-profile img{
+      width: 20px;
+  }
+  .social-profile span{
+      font-weight: lighter;
+      color: rgb(129, 128, 128);
+  }
+  .followers{
+     text-align: center;
+     margin-top: 10px;
+  }
+  .followers .number_follower{
+      font-size: 3.5rem;
+      font-weight: bold;
+  }
+  .followers p{
+      font-weight: lighter;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-size: .7rem;
+  }
+  .date{
+      margin-top: 10px;
+      text-align: center;
+  }
+  .date span{
+      font-size: 0.8rem;
+  }
+ /* overview */
+ h2{
+     text-align: left;
+     font-weight: bold;
+     color: #868686;
+ }
+ .overview-card{
+    width: 200px;
+    padding: 10px 10px;
+    box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.267);
+ }
+ .social-profile-2{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .social-profile-2 p{
+     font-size: 1rem;
+     color: #868686;
+ }
+ .social-counter{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 20px;
+ }
+ .social-counter .tracker span{
+     color: turquoise;
+     font-size: 12px;
+ }
+ @media(max-width:767px){
+     .row{
+         display: flex;
+         flex-direction: column;
+     }
+ }
